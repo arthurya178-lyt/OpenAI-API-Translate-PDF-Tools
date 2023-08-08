@@ -12,6 +12,9 @@
 ### Step 1:
 請到 [Open AI API-Keys](https://platform.openai.com/account/api-keys) 取得 **API金鑰**
 
+### Step 1.1:
+如果尚未設定信用卡,須先到GPT網站自行設定。
+(路徑於 ORGANIZATION > Billing > Payment methods)
 ### Step 2:
 將要翻譯的 **檔案(pdf)** 放到 **SourceFile** 資料夾底下
 
