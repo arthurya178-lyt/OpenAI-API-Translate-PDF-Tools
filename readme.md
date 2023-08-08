@@ -18,7 +18,7 @@
 ### Step 3:
 到 **.env** 檔案中設定下列資料
 ```text
-OPENAI_API_KEY=         OPEN_AI_API金鑰
+OPENAI_API_KEY=API_KEY  OPEN_AI_API金鑰
 FILE_NAME=file.pdf      PDF檔案名稱
 PDF_START_PAGE=0        開始讀取頁數(預設為0)
 PDF_END_PAGE=0          結束讀取頁面(預設為0,表檔案最後一頁,不包含該頁)
