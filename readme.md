@@ -1,11 +1,11 @@
 # 應用Open AI API 的PDF翻譯工具
-
+## 使用GPT3.5 turbo 進行翻譯
 ### 本專案需要預先下載下列套件
 
 - python-dotenv
-- pypdf2
+- PyPDF2
 - nltk
-- openai
+- requests
 
 ## 請依照下列步驟進行設定
 
@@ -21,7 +21,7 @@
 OPENAI_API_KEY=         OPEN_AI_API金鑰
 FILE_NAME=file.pdf      PDF檔案名稱
 PDF_START_PAGE=0        開始讀取頁數(預設為0)
-PDF_END_PAGE=0          結束讀取頁面(預設為0,表檔案最後一頁)
+PDF_END_PAGE=0          結束讀取頁面(預設為0,表檔案最後一頁,不包含該頁)
 ```
 ### Step 4:
 執行 **main.py** 檔案開始翻譯
