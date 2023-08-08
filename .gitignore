@@ -1,0 +1,6 @@
+logger/*
+result/*
+SourceFile/*
+.env
+.idea
+.vscode
