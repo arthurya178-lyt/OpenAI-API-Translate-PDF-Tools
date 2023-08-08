@@ -11,6 +11,7 @@ load_dotenv()
 FileName = os.getenv("FILE_NAME")
 page_start_at = int(os.getenv("PDF_START_PAGE"))
 page_end_at = int(os.getenv("PDF_END_PAGE"))
+language = os.getenv("LANGUAGE")
 
 
 
@@ -28,7 +29,7 @@ def send_to_chatGPT3_5(text):
     }
     request_data = {
         "model": "gpt-3.5-turbo",
-        "messages": [{"role": "user", "content": f"請翻譯成繁體中文 {ask_question}\n"}],
+        "messages": [{"role": "user", "content": f"Translate to {language} {ask_question}\n"}],
         "temperature": 0.5,
     }
     new_session = requests.session()
