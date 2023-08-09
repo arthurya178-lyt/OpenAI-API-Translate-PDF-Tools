@@ -42,7 +42,7 @@ def send_to_chatGPT3_5(text):
             serial_num += 1
         else:
             break
-    f = open(f'./logger/{datetime.now().strftime("%Y-%m-%d %H%M%S")} {serial_num}.txt' ,'w',encoding="UTF-8")
+    f = open(f'./logger/Log {datetime.now().strftime("%Y-%m-%d %H%M%S")} {serial_num}.txt' ,'w',encoding="UTF-8")
     if type(parse_result) == type({}):
         f.write(json.dumps(parse_result, indent=2))
     f.writelines("\n")
@@ -65,7 +65,7 @@ def send_to_chatGPT3_5(text):
     return chunks
 
 
-if page_end_at is None:
+if page_end_at is None or page_end_at == 0:
     page_amount = len(reader.pages)
 else:
     page_amount = page_end_at
